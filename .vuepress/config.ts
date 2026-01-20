@@ -4,18 +4,21 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { webpackBundler } from '@vuepress/bundler-webpack'
 
 export default defineUserConfig({
-  title: "vuepress-theme-reco",
-  description: "Just playing around",
+  title: "Chat Copilot",
+  description: "AI 对话增强助手 - 让每一次 AI 对话都更高效",
   bundler: viteBundler(),
   // bundler: webpackBundler(),
   theme: recoTheme({
-    logo: "/logo.png",
-    author: "reco_luan",
+    logo: "/chat-copilot-btn.png",
+    author: "Chat Copilot Team",
     authorAvatar: "/head.png",
-    docsRepo: "https://github.com/vuepress-reco/vuepress-theme-reco-next",
-    docsBranch: "main",
-    docsDir: "example",
+    // docsRepo: "https://github.com/hellolib/chat-copilot-doc",  // 使用说明：https://theme-reco.vuejs.press/docs/theme/git.html
+    // docsBranch: "main",
+    // docsDir: "example",
     lastUpdatedText: "",
+    primaryColor: '#3aa675',
+    colorMode: 'auto', // dark, light, 默认 auto
+    colorModeSwitch: true, // 是否展示颜色模式开关，默认 true
     // series 为原 sidebar
     series: {
       "/docs/theme-reco/": [
@@ -30,16 +33,20 @@ export default defineUserConfig({
       ],
     },
     navbar: [
-      { text: "Home", link: "/" },
-      { text: "Categories", link: "/categories/reco/1.html" },
-      { text: "Tags", link: "/tags/tag1/1.html" },
-      {
-        text: "Docs",
-        children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
-      },
+      // { text: '首页', link: '/', icon: 'IconHome' },
+      { text: '首页', link: '/', icon: 'XIconHome' },
+      // { text: "Categories", link: "/categories/reco/1.html" },
+      // { text: "Tags", link: "/tags/tag1/1.html" },
+      // {
+      //   text: "文档", link: "/docs/docs",icon: 'XIconDoc',
+      //   children: [
+      //     { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
+      //     { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
+      //   ],
+      // },
+    ],
+    socialLinks: [
+      { icon: 'XIconGithub', link: 'https://github.com/hellolib/chat-copilot' }
     ],
     bulletin: {
       body: [
@@ -95,6 +102,15 @@ export default defineUserConfig({
         },
       ],
     },
+    // 搜索
+    algolia: {
+      appId: 'XPCAI451RB',
+      apiKey: '1bdb5f5749ac2ec90dd52047cd19ecc6',
+      indexName: 'chat-copilot-algolia-index',
+      inputSelector: '### REPLACE ME ####',
+      algoliaOptions: { 'facetFilters': ["lang:$LANG"] },
+      debug: false // Set debug to true if you want to inspect the dropdown
+    },
     // commentConfig: {
     //   type: 'valine',
     //   // options 与 1.x 的 valineConfig 配置一致
@@ -109,5 +125,6 @@ export default defineUserConfig({
     //   },
     // },
   }),
+
   // debug: true,
 });
