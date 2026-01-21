@@ -6,8 +6,13 @@ import { webpackBundler } from '@vuepress/bundler-webpack'
 export default defineUserConfig({
   title: "Chat Copilot",
   description: "AI 对话增强助手 - 让每一次 AI 对话都更高效",
-  bundler: viteBundler(),
+  bundler: viteBundler({}),
   // bundler: webpackBundler(),
+  head: [
+    [
+      'link',{ rel: 'icon', href: '/favicon.ico' }
+    ]
+  ],
   theme: recoTheme({
     logo: "/chat-copilot-btn.png",
     author: "Chat Copilot Team",
@@ -21,15 +26,20 @@ export default defineUserConfig({
     colorModeSwitch: true, // 是否展示颜色模式开关，默认 true
     // series 为原 sidebar
     series: {
-      "/docs/theme-reco/": [
-        {
-          text: "module one",
-          children: ["home", "theme"],
-        },
-        {
-          text: "module two",
-          children: ["api", "plugin"],
-        },
+      "/docs/guides/": [
+        'introduce',
+        'getting-started',
+        // {
+        //   text: "快速开始",
+        //   icon: "IconGithub",
+        //   // children: ["home", "theme"],
+        //   link: "/docs/index/",
+        //   // target: "_self",
+        // },
+        // {
+        //   text: "module two",
+        //   children: ["api", "plugin"],
+        // },
       ],
     },
     navbar: [
@@ -37,71 +47,71 @@ export default defineUserConfig({
       { text: '首页', link: '/', icon: 'XIconHome' },
       // { text: "Categories", link: "/categories/reco/1.html" },
       // { text: "Tags", link: "/tags/tag1/1.html" },
-      // {
-      //   text: "文档", link: "/docs/docs",icon: 'XIconDoc',
-      //   children: [
-      //     { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-      //     { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-      //   ],
-      // },
+      {
+        text: "文档", link: "/docs/guides/introduce",icon: 'XIconDoc',
+        // children: [
+        //   { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
+        //   { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
+        // ],
+      },
     ],
     socialLinks: [
       { icon: 'XIconGithub', link: 'https://github.com/hellolib/chat-copilot' }
     ],
-    bulletin: {
-      body: [
-        {
-          type: "text",
-          content: `🎉🎉🎉 reco 主题 2.x 已经接近 Beta 版本，在发布 Latest 版本之前不会再有大的更新，大家可以尽情尝鲜了，并且希望大家在 QQ 群和 GitHub 踊跃反馈使用体验，我会在第一时间响应。`,
-          style: "font-size: 12px;",
-        },
-        {
-          type: "hr",
-        },
-        {
-          type: "title",
-          content: "QQ 群",
-        },
-        {
-          type: "text",
-          content: `
-          <ul>
-            <li>QQ群1：1037296104</li>
-            <li>QQ群2：1061561395</li>
-            <li>QQ群3：962687802</li>
-          </ul>`,
-          style: "font-size: 12px;",
-        },
-        {
-          type: "hr",
-        },
-        {
-          type: "title",
-          content: "GitHub",
-        },
-        {
-          type: "text",
-          content: `
-          <ul>
-            <li><a href="https://github.com/vuepress-reco/vuepress-theme-reco-next/issues">Issues<a/></li>
-            <li><a href="https://github.com/vuepress-reco/vuepress-theme-reco-next/discussions/1">Discussions<a/></li>
-          </ul>`,
-          style: "font-size: 12px;",
-        },
-        {
-          type: "hr",
-        },
-        {
-          type: "buttongroup",
-          children: [
-            {
-              text: "打赏",
-              link: "/docs/others/donate.html",
-            },
-          ],
-        },
-      ],
-    },
+    // bulletin: {
+    //   body: [
+    //     {
+    //       type: "text",
+    //       content: `🎉🎉🎉 reco 主题 2.x 已经接近 Beta 版本，在发布 Latest 版本之前不会再有大的更新，大家可以尽情尝鲜了，并且希望大家在 QQ 群和 GitHub 踊跃反馈使用体验，我会在第一时间响应。`,
+    //       style: "font-size: 12px;",
+    //     },
+    //     {
+    //       type: "hr",
+    //     },
+    //     {
+    //       type: "title",
+    //       content: "QQ 群",
+    //     },
+    //     {
+    //       type: "text",
+    //       content: `
+    //       <ul>
+    //         <li>QQ群1：1037296104</li>
+    //         <li>QQ群2：1061561395</li>
+    //         <li>QQ群3：962687802</li>
+    //       </ul>`,
+    //       style: "font-size: 12px;",
+    //     },
+    //     {
+    //       type: "hr",
+    //     },
+    //     {
+    //       type: "title",
+    //       content: "GitHub",
+    //     },
+    //     {
+    //       type: "text",
+    //       content: `
+    //       <ul>
+    //         <li><a href="https://github.com/vuepress-reco/vuepress-theme-reco-next/issues">Issues<a/></li>
+    //         <li><a href="https://github.com/vuepress-reco/vuepress-theme-reco-next/discussions/1">Discussions<a/></li>
+    //       </ul>`,
+    //       style: "font-size: 12px;",
+    //     },
+    //     {
+    //       type: "hr",
+    //     },
+    //     {
+    //       type: "buttongroup",
+    //       children: [
+    //         {
+    //           text: "打赏",
+    //           link: "/docs/others/donate.html",
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
     // 搜索
     algolia: {
       appId: 'XPCAI451RB',

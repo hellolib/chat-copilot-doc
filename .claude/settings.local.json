@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run type-check:*)",
+      "Bash(mkdir:*)",
+      "Bash(node:*)",
+      "Bash(npm run lint)",
+      "Bash(npx eslint:*)",
+      "Bash(npm run lint:*)",
+      "Bash(npm run build:*)",
+      "Read(//Users/liusaisai/workspace/gowork/src/github.com/**)",
+      "Bash(cat:*)",
+      "WebFetch(domain:grok.com)",
+      "Bash(rm:*)",
+      "Bash(touch:*)",
+      "Bash(npm install:*)",
+      "Skill(ui-ux-pro-max)",
+      "Bash(python3:*)",
+      "Bash(rsvg-convert:*)",
+      "Bash(ls:*)",
+      "Bash(1 -- --fix)",
+      "Bash(sed:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

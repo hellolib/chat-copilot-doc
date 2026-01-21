@@ -7,7 +7,9 @@ modules: # 指定首页展示模块
 #  - MdContent
   - XHomeFooter
 bannerBrand:
-  bgImage: '/bg.svg'
+  bgImage: /bg.svg
+  bgImageStyle:
+    # height: 450px
   title: Chat Copilot
   description: AI 对话增强助手 - 让每一次 AI 对话都更高效
   tagline: 一个 AI 对话增强浏览器插件，旨在提升用户在使用 AI 平台时的效率和体验。通过智能提示词优化，帮助用户获得更精准、更高质量的 AI 回复。
