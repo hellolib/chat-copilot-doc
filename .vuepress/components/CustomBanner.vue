@@ -22,8 +22,8 @@
       <div class="shields-wrapper">
         <img alt="GitHub stars" src="https://img.shields.io/github/stars/hellolib/chat-copilot?style=flat-square&logo=github&color=5D67E8">
         <img alt="GitHub forks" src="https://img.shields.io/github/forks/hellolib/chat-copilot?style=flat-square&logo=github&color=5D67E8">
-        <img alt="Npm version" src="https://img.shields.io/badge/tailwindcss-3.1.6-5D67E8?style=flat-square&logo=tailwindcss"/>
         <img alt="GitHub license" src="https://img.shields.io/github/license/hellolib/chat-copilot?style=flat-square&logo=github&color=5D67E8">
+        <img alt="Npm version" src="https://img.shields.io/badge/tailwindcss-3.1.6-5D67E8?style=flat-square&logo=tailwindcss"/>
       </div>
     </div>
   </section>
