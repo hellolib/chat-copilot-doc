@@ -9,14 +9,15 @@ export default defineUserConfig({
   bundler: viteBundler({}),
   // bundler: webpackBundler(),
   head: [
-    [
-      'link',{ rel: 'icon', href: '/favicon.ico' }
-    ]
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/chat-copilot-btn.svg' }],
+    ['link', { rel: 'apple-touch-icon', href: '/chat-copilot-btn.png' }],
   ],
   theme: recoTheme({
     logo: "/chat-copilot-btn.png",
     author: "Chat Copilot Team",
     authorAvatar: "/head.png",
+    catalogTitle: '页面导航',
     // docsRepo: "https://github.com/hellolib/chat-copilot-doc",  // 使用说明：https://theme-reco.vuejs.press/docs/theme/git.html
     // docsBranch: "main",
     // docsDir: "example",

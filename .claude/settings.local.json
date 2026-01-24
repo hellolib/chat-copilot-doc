@@ -19,7 +19,8 @@
       "Bash(rsvg-convert:*)",
       "Bash(ls:*)",
       "Bash(1 -- --fix)",
-      "Bash(sed:*)"
+      "Bash(sed:*)",
+      "WebFetch(domain:github.com)"
     ],
     "deny": [],
     "ask": []
