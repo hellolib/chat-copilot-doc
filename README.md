@@ -14,8 +14,9 @@ customBanner:
   description: AI 对话增强助手 - 让每一次 AI 对话都更高效
   tagline: 一个 AI 对话增强浏览器插件，旨在提升用户在使用 AI 平台时的效率和体验。通过智能提示词优化，帮助用户获得更精准、更高质量的 AI 回复。
   buttons:
+    - { text: 商店安装, link: 'https://chromewebstore.google.com/detail/chat-copilot/ignafelbdjojmmofofhldldpgkceflal', type: 'primary', target: '_blank' }
     - { text: 快速开始, link: '/docs/guides/getting-started.html', type: 'plain' }
-    - { icon: XIconGithub, text: Github, link: 'https://github.com/hellolib/chat-copilot', type: 'plain' }
+    - { icon: XIconGithub, text: Github, link: 'https://github.com/hellolib/chat-copilot', type: 'plain', target: '_blank' }
 #  socialLinks:
 #    - { icon: IconGithub, link: 'https://github.com/recoluan' }
 #    - { icon: LogoGithub, link: 'https://github.com/recoluan' }

@@ -14,6 +14,7 @@
           :icon="btn.icon"
           :text="btn.text"
           :link="btn.link"
+          :target="btn.target"
           icon-size="18"
           text-size="14"
         />
