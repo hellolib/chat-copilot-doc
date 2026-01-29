@@ -42,12 +42,12 @@ export default defineUserConfig({
     ],
     // 搜索
     algolia: {
-      appId: 'XPCAI451RB',
-      apiKey: '1bdb5f5749ac2ec90dd52047cd19ecc6',
-      indexName: 'chat-copilot-algolia-index',
-      inputSelector: '### REPLACE ME ####',
-      algoliaOptions: {'facetFilters': ["lang:$LANG"]},
-      debug: false // Set debug to true if you want to inspect the dropdown
+      appId: '4WZZ9AP4J3',
+      apiKey: '0f688f0dd86e421ac65442051a23a82e',
+      indexName: 'chat-copilot-index',
+      // inputSelector: '### REPLACE ME ####',
+      // algoliaOptions: {'facetFilters': ["lang:$LANG"]},
+      // debug: false // Set debug to true if you want to inspect the dropdown
     },
   }),
 });
