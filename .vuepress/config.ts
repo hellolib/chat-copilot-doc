@@ -12,6 +12,7 @@ export default defineUserConfig({
     ['link', {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
     ['link', {rel: 'icon', type: 'image/svg+xml', href: '/chat-copilot-btn.svg'}],
     ['link', {rel: 'apple-touch-icon', href: '/chat-copilot-btn.png'}],
+    ['meta', {name: 'algolia-site-verification', content: 'A6181A045989B31E'}],
   ],
   theme: recoTheme({
     logo: "/chat-copilot-btn.png",
