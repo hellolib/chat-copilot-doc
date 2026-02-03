@@ -5,6 +5,7 @@ import {webpackBundler} from '@vuepress/bundler-webpack'
 
 export default defineUserConfig({
   title: "Chat Copilot",
+  lang: "zh-CN", // ✅ 关键：否则默认 en-US，DocSearch 会自动 facetFilters lang:en-US
   description: "AI 对话增强助手 - 让每一次 AI 对话都更高效",
   bundler: viteBundler({}),
   // bundler: webpackBundler(),
@@ -35,8 +36,8 @@ export default defineUserConfig({
     },
     navbar: [
       {text: '首页', link: '/', icon: 'XIconHome'},
-      {text: "文档", link: "/docs/guides/introduce", icon: 'XIconDoc',},
-      {text: "反馈", link: "/docs/feedback/index", icon: "XFeedback",},
+      {text: "文档", link: "/docs/guides/introduce.html", icon: 'XIconDoc',},
+      {text: "反馈", link: "/docs/feedback/index.html", icon: "XFeedback",},
     ],
     socialLinks: [
       {icon: 'XIconGithub', link: 'https://github.com/hellolib/chat-copilot'}
@@ -45,10 +46,10 @@ export default defineUserConfig({
     algolia: {
       appId: '4WZZ9AP4J3',
       apiKey: '0f688f0dd86e421ac65442051a23a82e',
-      indexName: 'chat-copilot-index',
+      indexName: 'chat-copilot-crawler',
       // inputSelector: '### REPLACE ME ####',
       // algoliaOptions: {'facetFilters': ["lang:$LANG"]},
-      // debug: false // Set debug to true if you want to inspect the dropdown
+      debug: false // Set debug to true if you want to inspect the dropdown
     },
   }),
 });
