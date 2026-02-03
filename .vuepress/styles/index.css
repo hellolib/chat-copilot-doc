@@ -1,0 +1,22 @@
+/* 搜索框整体 */
+.search-box {
+  border-radius: 8px;
+  border: 1px solid #a0a0a0;
+}
+
+/* 搜索输入框 */
+.search-box input {
+  padding: 0 .5rem 0 1rem !important;
+  width: 13rem !important;
+}
+
+/* 搜索结果弹层 */
+/* 仅亮色模式生效 */
+html:not(.dark) .search-box .suggestions {
+  border-radius: 10px !important;
+  background-color: #ffffff !important;
+  border: 0.5px solid #e0e0e0 !important;
+}
+.search-box .suggestions{
+  width: 23rem !important;
+}

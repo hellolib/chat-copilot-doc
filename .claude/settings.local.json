@@ -20,7 +20,8 @@
       "Bash(ls:*)",
       "Bash(1 -- --fix)",
       "Bash(sed:*)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "mcp__ide__getDiagnostics"
     ],
     "deny": [],
     "ask": []
