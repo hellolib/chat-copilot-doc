@@ -3,7 +3,7 @@ import * as enConfig from './en'
 import { RecoThemeData } from 'vuepress-theme-reco/lib/types'
 
 export const themeConfig: RecoThemeData = {
-  logo: '/chat-copilot-btn.png',
+  logo: '/chat-copilot-btn-light-1.svg',
   author: 'Chat Copilot Team',
   authorAvatar: '/head.png',
   catalogTitle: '页面导航',
