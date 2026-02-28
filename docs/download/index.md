@@ -12,7 +12,7 @@ date: 2026-02-08
 
 ## 方式二：直接下载 CRX 插件
 
-1. 下载： [ChatCopilot-v0.15.1.crx](/release-crx/ChatCopilot-v0.15.1.crx)
+1. 下载： [ChatCopilot-0.17.1.crx](/release-crx/ChatCopilot-0.17.1.crx)
 2. 下载完成后，打开 Chrome 浏览器，访问 `chrome://extensions/`
 3. 开启右上角「开发者模式」
 4. 将下载的`.crx`文件拖拽到扩展管理页面

@@ -11,7 +11,7 @@ date: 2026-02-08
 
 ## Method 2: Direct CRX Download
 
-1. Download: [ChatCopilot-v0.15.1.crx](/release-crx/ChatCopilot-v0.15.1.crx)
+1. Download: [ChatCopilot-0.17.1.crx](/release-crx/ChatCopilot-0.17.1.crx)
 2. Open Chrome and visit `chrome://extensions/`
 3. Enable "Developer mode" in the top right
 4. Drag the downloaded `.crx` file into the extensions page
